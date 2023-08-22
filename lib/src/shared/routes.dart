@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:github_search/src/features/repositories_search/repositoreis_search.dart';
 import 'package:github_search/src/features/users_search/users_search.dart';
-import 'package:github_search/src/features/welcome/presentation/welcome.dart';
 import 'package:github_search/src/shared/extensions/context.dart';
+
+import '../features/welcome/welcome.dart';
 
 class Routes {
   static final Page welcome = Page(WelcomePage());

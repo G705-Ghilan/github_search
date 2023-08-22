@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:github_search/src/shared/widgets/custom_button.dart';
 
-import '../../data/models/page_content.dart';
+import '../data/models/page_content.dart';
 
 class PageViewItem extends StatelessWidget {
   const PageViewItem({super.key, required this.pageContent, this.onNext});

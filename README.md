@@ -37,17 +37,16 @@ lib:
     │   │           users_listview.dart
     │   │
     │   └───welcome
+    │       │   welcome.dart
+    │       │
     │       ├───data
     │       │   │   data.dart
     │       │   │
     │       │   └───models
     │       │           page_content.dart
     │       │
-    │       └───presentation
-    │           │   welcome.dart
-    │           │
-    │           └───widgets
-    │                   page_view_item.dart
+    │       └───widgets
+    │               page_view_item.dart
     │
     └───shared
         │   routes.dart

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:github_search/injection.dart';
-import 'package:github_search/src/features/welcome/presentation/widgets/page_view_item.dart';
+import 'package:github_search/src/features/welcome/widgets/page_view_item.dart';
 import 'package:github_search/src/shared/extensions/context.dart';
 import 'package:github_search/src/shared/routes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../data/data.dart';
-import '../data/models/page_content.dart';
+import 'data/data.dart';
+import 'data/models/page_content.dart';
+
+
 
 class WelcomePage extends StatelessWidget {
   WelcomePage({super.key});
