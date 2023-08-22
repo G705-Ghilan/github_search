@@ -4,17 +4,8 @@ import 'package:github_search/src/features/users_search/bloc/users_search_bloc.d
 
 import '../routes.dart';
 
-class AppDrawer extends StatefulWidget {
-  const AppDrawer({
-    super.key,
-  });
-
-  @override
-  State<AppDrawer> createState() => _AppDrawerState();
-}
-
-class _AppDrawerState extends State<AppDrawer> {
-  // int index = 0;
+class AppDrawer extends StatelessWidget {
+  const AppDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +15,6 @@ class _AppDrawerState extends State<AppDrawer> {
         child: BlocBuilder<UsersSearchBloc, UsersSearchState>(
           buildWhen: (previous, current) => current is DrawerIndexChanged,
           builder: (context, state) {
-            debugPrint("drawer ui updated ...");
             int index = context.read<UsersSearchBloc>().index;
             if (state is DrawerIndexChanged) {
               index = state.index;

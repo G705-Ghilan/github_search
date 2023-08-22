@@ -3,11 +3,6 @@ import 'package:github_api/bloc/github_api_bloc.dart';
 import 'package:github_search/src/features/repositories_search/bloc/repositories_search_bloc.dart';
 import 'injection.dart';
 
-import 'dart:developer';
-
-import 'package:flutter/material.dart';
-
-import 'package:github_search/injection.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:github_search/src/features/users_search/bloc/users_search_bloc.dart';
 import 'package:github_search/src/shared/routes.dart';
@@ -27,15 +22,9 @@ class GithubSearchApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(
-          create: (context) => RepositoreisSearchBloc(),
-        ),
-        BlocProvider(
-          create: (context) => UsersSearchBloc(),
-        ),
-        BlocProvider(
-          create: (context) => sl.get<GithubApiBloc>(),
-        ),
+        BlocProvider(create: (context) => RepositoreisSearchBloc()),
+        BlocProvider(create: (context) => UsersSearchBloc()),
+        BlocProvider(create: (context) => sl.get<GithubApiBloc>()),
       ],
       child: BlocBuilder<RepositoreisSearchBloc, RepositoreisSearchState>(
         buildWhen: (previous, current) => current is ThemeChangedState,
