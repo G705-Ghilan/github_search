@@ -1,0 +1,43 @@
+name: github_search
+description: A flutter test bloc app 
+
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+
+  flutter_bloc: ^8.1.3
+  smooth_page_indicator: ^1.1.0
+
+  url_launcher: ^6.1.12
+  get_it: ^7.6.0
+  shared_preferences: ^2.2.0
+  github_api:
+    path: ./packages/github_api
+ 
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+
+
